@@ -27,8 +27,7 @@ jobs:
               -s . \
               -d '$web' \
               --overwrite true \
-              --pattern '*' \
-              --exclude-pattern '.git/*;.github/*;*.md;*.docx'
+              --pattern '*'
 
       # Uncomment after setting up Azure CDN
       # - name: Purge Azure CDN endpoint
