@@ -5,7 +5,7 @@
 
 // ---- Configuration ----
 // Update this URL after deploying your Azure Function
-const API_BASE_URL = 'https://YOUR-FUNCTION-APP.azurewebsites.net/api';
+const API_BASE_URL = 'https://cunyuslabs-api.azurewebsites.net/api';
 
 // ---- Visitor Counter ----
 async function updateVisitorCount() {
