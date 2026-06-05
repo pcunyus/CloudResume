@@ -53,12 +53,10 @@ jobs:
         with:
           name: php-app
       
-      - name: Login to Azure
+      - name: Azure Login
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_4504BD127ADC4161AB625FBA78DA6522 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_0AF36F0F468F41EB9461D1A8F71CE13E }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_99FA47E7080142289D25237DA797112C }}
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
